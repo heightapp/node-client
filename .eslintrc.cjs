@@ -8,10 +8,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:import/typescript',
   ],
-  plugins: [
-    '@typescript-eslint',
-    'import',
-  ],
+  plugins: ['@typescript-eslint', 'import'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'es2021',

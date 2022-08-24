@@ -3,6 +3,7 @@
 Use this template to start a new node project.
 
 It uses:
+
 - typescript
 - eslint
 - yarn
