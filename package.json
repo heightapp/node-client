@@ -1,7 +1,7 @@
 {
-  "name": "<module-name>",
-  "version": "0.0.1",
-  "description": "",
+  "name": "@heightapp/client",
+  "version": "0.0.8",
+  "description": "Client for Height API",
   "type": "module",
   "engines": {
     "node": ">=16.0.0"
@@ -19,13 +19,13 @@
     "lint": "eslint ./src",
     "prepare": "npm run build"
   },
-  "repository": "git+https://github.com/heightapp/<module-name>.git",
+  "repository": "git+https://github.com/heightapp/node-client.git",
   "author": "Height",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/heightapp/<module-name>/issues"
+    "url": "https://github.com/heightapp/node-client/issues"
   },
-  "homepage": "https://github.com/heightapp/<module-name>#readme",
+  "homepage": "https://github.com/heightapp/node-client#readme",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "5.11.0",
     "@typescript-eslint/parser": "^5.34.0",
@@ -39,7 +39,12 @@
     "yargs": "^17.5.1"
   },
   "dependencies": {
+    "@types/lodash": "^4.14.184",
     "@types/node": "^18.7.11",
-    "dotenv": "^16.0.1"
+    "dotenv": "^16.0.1",
+    "lodash": "^4.17.21",
+    "node-fetch": "^3.2.10",
+    "open": "^8.4.0",
+    "pkce-challenge": "^3.0.0"
   }
 }
