@@ -1,6 +1,6 @@
 {
   "name": "@heightapp/client",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "Client for Height API",
   "type": "module",
   "engines": {
@@ -16,6 +16,7 @@
   "typings": "./dist/types/index.d.ts",
   "scripts": {
     "build": "NODE_ENV=production ./scripts/build.js --esm --cjs --types",
+    "dev": "NODE_ENV=development ./scripts/build.js --esm && node -r dotenv/config dist/esm/index.js ",
     "lint": "eslint ./src",
     "prepare": "npm run build"
   },
@@ -41,5 +42,6 @@
   "dependencies": {
     "@types/node": "^18.7.11",
     "dotenv": "^16.0.1",
+    "node-fetch": "^3.2.10"
   }
 }
